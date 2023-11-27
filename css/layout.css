@@ -1,0 +1,211 @@
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For mobile phones: */
+  html {
+    width: auto;
+    margin: 0 auto;
+    float: right;
+  }
+}
+
+#first-article {
+  margin-top: 0;
+}
+/* Add more as needed */
+
+#page-title {
+  color: #000000;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+html {
+  scroll-behavior: smooth;
+  max-width: 50em;
+  margin: 0 auto;
+  float: none;
+}
+
+/* Layout */
+header {
+  display: grid;
+}
+main {
+  margin: 2%;
+  display: grid;
+  overflow: auto;
+  grid-template-columns: 2fr 7fr 2fr;
+}
+
+.leftnav {
+  border-radius: 10px;
+  margin: 1%;
+  background-color: #fbc4ab;
+  /* Bright blue background */
+  overflow: hidden;
+}
+
+aside {
+  float: right;
+  align-content: center;
+  text-align: center;
+  margin-right: 2%;
+}
+/* Navigation Bar Styles */
+nav {
+  border-radius: 15px;
+  margin: 2%;
+  background-color: #fbc4ab;
+  /* Bright blue background */
+  overflow: hidden;
+  height: fit-content;
+}
+
+nav a {
+  display: block;
+  color: #1c0a01;
+  /* Light green text for contrast */
+  text-align: center;
+  height: auto;
+  padding: 8%;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #f89d73;
+  /* Light orange background on hover */
+  color: #34483d;
+  /* Dark red text on hover */
+  transition: 500ms;
+}
+
+section {
+  display: grid;
+}
+
+aside {
+  display: grid;
+  border-radius:20px;
+  margin: 2%;
+  background-color: #fbc4ab;
+  /* Bright blue background */
+  overflow: hidden;
+  height: fit-content;
+}
+
+aside button {
+  border: none;
+  background-color: #2d4744;
+  color: #ffff;
+  padding: 9%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+aside button:hover {
+  background-color: #a8c6ff;
+  transition: 150ms;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1efef;
+  /* Light green background */
+  color: #c9cba3;
+}
+
+/* Rounded Frame for Specific Tags */
+
+article {
+  border-radius: 20px;
+  margin: 1em;
+  animation: slideInFromRight 500ms;
+}
+
+article p {
+  margin: 1em;
+  border: 2em;
+}
+
+/* Additional Styles */
+/* You can add more styles here as per your website's requirement */
+
+/* Adapt to suitable contrast colors */
+.background-dark-red {
+  background-color: #472d30;
+  color: #ffffff;
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+}
+
+.background-dark-red:hover {
+  background-color: #2d4744;
+  color: #ffffff;
+}
+
+.background-brown {
+  background-color: #723d46;
+  color: #ffffff;
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+}
+
+.background-brown:hover {
+  background-color: #3d7269;
+}
+
+.background-sand {
+  background-color: #ffe1a8;
+  color: #000000;
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+}
+
+.background-sand:hover {
+  background-color: #a8c6ff;
+}
+
+.background-chily {
+  background-color: #e26d5c;
+  color: #000000;
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+}
+
+/* contrast colour: #5cd1e2 */
+.background-chily:hover {
+  background-color: #e28f5c;
+}
+
+.background-light-green {
+  background-color: #c9cba3;
+  color: #000000;
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+}
+
+.background-light-green-2 {
+  background-color: #b7b7a4;
+  color: #000000;
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+}
+
+.background-light-green-2:hover {
+  background-color: #d0d08b;
+}
+
+.background-light-brown {
+  background-color: #d4a373;
+  color: #000000;
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traveltest.</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto"rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/traveltest.css">
+    <style>
+      @keyframes slidein {
+        from {
+          font-size: 300%;
+          transform: translateX(0%) translateY(0px);
+        }
+
+        to {
+          font-size: 300%;
+          transform: translateX(450px) translateY(200px);
+        }
+      }
+
+      #airplane {
+        animation-duration: 3s;
+        animation-name: slidein;
+        animation-direction: normal;
+      }
+    </style>
+    <script src="airplane.js"></script>
+  </head>
+  <body>
+    <p id="airplane" style="font-size: 300%; position: absolute; bottom: 200px">
+      ✈️
+    </p>
+    <main hidden>
+      <h1>내 마음속에 꿈틀거리는 여행지를 찾아보자!</h1>
+      <div class="progress-container">
+          <div id="progress-bar" class="progress-bar"></div>
+      </div>    
+      <div id="question" class="question">질문이 여기에 표시됩니다.</div>
+      <div class="quiz-container" id="quiz-container">
+          <div id="option-container">
+              <!-- 옵션들이 여기에 들어갑니다. -->
+          </div>
+          <div class="controls">
+              <button id="previous">이전</button>
+              <button id="next">다음</button>
+          </div>
+      </div>
+
+      <script src="../../javascript/script3.js"></script>
+    </main>
+  </body>
+</html>

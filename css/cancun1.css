@@ -1,0 +1,357 @@
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For mobile phones: */
+  html {
+    width: auto;
+    margin: 0 auto;
+    float: right;
+  }
+}
+
+#fixed {
+  position: fixed;
+  left: 10px;
+  top: 20;
+  z-index: 100;
+  width: 120px;
+  height: 30%;
+}
+
+section {
+  width: 350px;
+}
+
+#first-article {
+  margin-top: 0;
+}
+/* Add more as needed */
+
+#page-title {
+  color: #000000;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+html {
+  scroll-behavior: smooth;
+  max-width: 50em;
+  margin: 0 auto;
+  float: none;
+}
+/*꼭 가봐야 할 곳*/
+.slider {
+  position: relative;
+  width: 400px; /* 슬라이더의 너비 */
+  overflow: hidden; /* 이미지가 슬라이더 밖으로 나가지 않도록 설정 */
+}
+
+.slides {
+  display: flex; /* 이미지들을 가로로 정렬 */
+  transition: transform 0.5s ease; /* 부드러운 전환 효과 */
+}
+
+.slides img {
+  width: 400px; /* 각 이미지의 너비 */
+  height: auto; /* 각 이미지의 높이 */
+  object-fit: cover; /* 이미지 비율 유지 */
+  border-radius: 20px;
+}
+
+.slide-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+
+.prev-arrow {
+  left: 10px;
+}
+
+.next-arrow {
+  right: 10px;
+}
+
+/*꼭 먹어봐야할것 사진 */
+.image {
+  position: relative;
+  width: 500px; /* Set the width of the image container */
+  height: 500px; /* Set the height as auto to maintain aspect ratio */
+}
+.image__img {
+  width: 500px; /* Make the image fill the container */
+  height: auto; /* Keep the aspect ratio of the image */
+  display: block; /* Remove extra space beneath the image */
+  border-radius: 40px;
+}
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex; /* To center content inside the overlay */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  visibility: hidden; /* Hide it by default */
+  opacity: 0;
+  flex-direction: column;
+  transition: visibility 0s, opacity 0.5s linear; /* Smooth transition for hover effect */
+}
+.image-container:hover .image__overlay {
+  visibility: visible; /* Show the overlay when the container is hovered */
+  opacity: 1;
+}
+.image-gallery {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  gap: 5px; /* This is the space between your images */
+}
+
+.image-container {
+  position: relative;
+  width: 100%; /* Set the width to use the full width of the container */
+  margin-bottom: 20px; /* This creates space between the images */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  display: block;
+}
+
+.image-title,
+.image-description {
+  position: static;
+  width: 100%; /* Full width of the parent container */
+  bottom: 0; /* Align to the bottom of the container */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Semi-transparent background for readability */
+  color: #fff; /* Text color */
+  padding: 10px; /* Spacing inside the title/description elements */
+  box-sizing: border-box; /* Ensures padding doesn't affect the overall width */
+  margin: 0; /* Resets any default margin */
+  text-align: center;
+}
+
+.image-title {
+  text-align: center; /* Position the title at the top */
+}
+
+.image-description {
+  bottom: 0; /* Position the description at the bottom */
+}
+
+/* Layout */
+header {
+  display: grid;
+}
+main {
+  margin: 2%;
+  display: grid;
+  overflow: auto;
+  grid-template-columns: 2fr 7fr 2fr;
+  background-image: url("../../images/mexico/cancun-background.jpg");
+  background-position: 0%;
+  background-size:auto;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(8px);
+}
+
+.leftnav {
+  border-radius: 10px;
+  margin: 1%;
+  background-color: #fbc4ab;
+  /* Bright blue background */
+  overflow: hidden;
+}
+
+aside {
+  align-content: center;
+  text-align: center;
+  margin-right: 2%;
+}
+
+/* 추가적으로 화살표에 대한 스타일링을 더할 수 있습니다 */
+
+/* Navigation Bar Styles */
+nav {
+  border-radius: 15px;
+  margin: 2%;
+  background-color: #fbc4ab;
+  /* Bright blue background */
+  overflow: hidden;
+  height: fit-content;
+}
+
+nav a {
+  display: block;
+  color: #1c0a01;
+  /* Light green text for contrast */
+  text-align: center;
+  height: auto;
+  padding: 8%;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #f89d73;
+  /* Light orange background on hover */
+  color: #34483d;
+  /* Dark red text on hover */
+  transition: 500ms;
+}
+
+section {
+  align-items: center;
+}
+
+aside {
+  display: grid;
+  border-radius: 20px;
+  margin: 2%;
+  background-color: #fbc4ab;
+  /* Bright blue background */
+  overflow: hidden;
+  height: fit-content;
+}
+
+#aside-container {
+  position: fixedc;
+  float: right;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+aside button {
+  border: none;
+  background-color: #2d4744;
+  color: #ffff;
+  padding: 9%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+aside button:hover {
+  background-color: #a8c6ff;
+  transition: 150ms;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+
+  /* Light green background */
+  color: #c9cba3;
+}
+
+/* Rounded Frame for Specific Tags */
+article {
+  border-radius: 20px;
+  animation: slideInFromRight 500ms;
+  margin: 1em;
+}
+article p {
+  margin: 1em;
+  border: 2em;
+}
+
+/* Additional Styles */
+/* You can add more styles here as per your website's requirement */
+.travel_description h3 {
+  color: navy; /* This sets the color of <h3> tags to navy blue */
+}
+
+.travel_description p {
+  color: black; /* This sets the color of <p> tags to black */
+}
+
+/* Adapt to suitable contrast colors */
+.background-dark-red {
+  background-color: #472d30;
+  color: #ffffff;
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+}
+
+.background-dark-red:hover {
+  background-color: #2d4744;
+  color: #ffffff;
+}
+
+.background-brown {
+  background-color: #723d46;
+  color: #ffffff;
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+}
+
+.background-brown:hover {
+  background-color: #3d7269;
+}
+
+.background-sand {
+  background-color: #ffe1a8;
+  color: #000000;
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+}
+
+.background-sand:hover {
+  background-color: #a8c6ff;
+}
+
+.background-chily {
+  background-color: #e26d5c;
+  color: #000000;
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+}
+
+/* contrast colour: #5cd1e2 */
+.background-chily:hover {
+  background-color: #e28f5c;
+}
+
+.background-light-green {
+  background-color: #c9cba3;
+  color: #000000;
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+}
+
+.background-light-green-2 {
+  background-color: #b7b7a4;
+  color: #000000;
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+}
+
+.background-light-green-2:hover {
+  background-color: #d0d08b;
+}
+
+.background-light-brown {
+  background-color: #d4a373;
+  color: #000000;
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+}
