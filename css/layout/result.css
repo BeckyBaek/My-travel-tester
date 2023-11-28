@@ -6,6 +6,7 @@
 }
 body{
     font-family: 'TAEBAEKmilkyway';
+
 }
 h1 {
     padding:10px;
@@ -63,9 +64,7 @@ iframe{
 
 #retest a {
     text-decoration: none;
-    background-color: red;
     border-radius: 30px;
-    color: white;
     display: block; /* Make the link fill the div */
     padding: 10px; /* Add some padding inside the link */
 }

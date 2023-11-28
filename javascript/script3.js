@@ -204,8 +204,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       }
       // 결과: 아이슬란드
       else if (result_Iceland) {
-        alert("당신의 여행지는 아이슬란드입니다! 확인 버튼을 누르면 여행지 소개 페이지로 넘어갑니다.");
-        window.location.href = "http://127.0.0.1:3000/html/places-info/iceland/iceland.html";
+        window.location.href = "file:///Users/luv_euniself/Desktop/Travel_Guide/My-travel-tester/html/where-to-go/place_image/result_destinations/result_iceland.html";
       }
       // 결과: 뉴욕
       else if (result_NewYork) {
